@@ -1,0 +1,81 @@
+{
+    "Instructions": [
+        "When writing prompts for user input label, you must include the colon symbol (':'')"
+    ],
+    
+    "languages" : [
+        ["English", "en_EN"],
+        ["Slovenščina", "sl_SL"]
+    ], 
+    
+    "en_EN" : {
+        "hello" : {
+            "text": "Hello there!\n\nWhat would you like to do?\n\nA) Play the game\nB) Check the Highscores\nC) Change Settings",
+            "label": "Your Selection:"
+        },
+        "settings": {
+            "choices": "Settings\n\nA) Change ranges\nB) Change game difficulty\nC) Change language\n\nD) Main menu",
+            "ranges": "What is the highest number you would like to guess?",
+            "diff": "Current difficulty is set to %1.",
+            "language": "A) English",
+            "label": "Your Selection:"
+        },
+        "highscores": {
+            "player": "Player",
+            "date": "Date",
+            "guess": "Guessed in",
+            "mode": "Game Mode",
+            "label": "Go back?"
+        },
+        "game": {
+            "label": "Guess the secret number between 1 and %1:",
+            "guesses": "Guess %1 / %2",
+            "hint": {
+                "higher": "Try a higher number.",
+                "lower": "Try a lower number."
+            },
+            
+            "fail": "Sorry! The secret number was %1.",
+            "success": "Congratulations!",
+            "name": "Enter your name:",
+            "highscore_top10": "Wow! A new Top 10 highscore!",
+            "highscore": "Amazing! That's a new highscore!",
+            "playagain": "Would you like to play again? Y/N"
+        }
+    }, 
+    
+    "sl_SL" : {
+        "hello" : {
+            "text": "Živjo!\n\nKaj želiš narediti?\n\nA) Nova igra\nB) Najboljši rezulati\nC) Uredi nastavitve",
+            "label": "Izbira:"
+        },
+        "settings": {
+            "choices": "Nastavitve\n\nA) Spremeni obseg števil\nB) Spremeni težavnost igre\nC) Spremeni jezik\n\nD) Glavni meni",
+            "ranges": "Katera želiš, da je najvišja možna številka?",
+            "diff": "Trenutna težavnost igre je %1.",
+            "label": "Izbira:"
+        },
+        "highscores": {
+            "player": "Igralec",
+            "date": "Datum",
+            "guess": "Št. poskusov",
+            "mode": "Težavnost",
+            "label": "Nazaj?"
+        },
+        "game": {
+            "label": "Ugani skrito številko med 1 in %1:",
+            "guesses": "Poskus %1 / %2",
+            "hint": {
+                "higher": "Poskusi z višjo številko.",
+                "lower": "Poskusi z nižjo številko."
+            },
+            
+            "fail": "Škoda! Skrita številka je bila %1.",
+            "success": "Čestitke!",
+            "name": "Vnesi smoje ime:",
+            "highscore_top10": "Wow! Novi rezultat med Top 10!",
+            "highscore": "Izvrstno! To je novi rekord!",
+            "playagain": "Bi ponovil igro? Y/N"
+        }
+    }
+}
