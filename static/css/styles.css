@@ -1,0 +1,116 @@
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    background-image: url("https://wallpapercave.com/wp/wp10128604.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightslategray;
+}
+
+.big-title {
+    height: min-content;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    min-width: fit-content;
+}
+
+.big-title-line {
+    font-size: 12px;
+    white-space: pre;
+    margin-left: 0;
+    color: white;
+}
+
+.big-title-line a {
+    color: white
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+
+.terminal {
+    width: 80%;
+    margin-top: 40px;
+    aspect-ratio: 16 / 9;
+    min-width: 1024px;
+    min-height: 576px;
+    max-width: 1920px;
+    max-height: 1080px;
+    min-width: min-content
+}
+
+.window-top {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px 15px 0px 0px;
+    background-color: darkgray;
+    align-items: center;
+    height: 50px;
+    border: black solid 0.5px;
+}
+
+.window-top-element {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.window-top-icons > img {
+    height: 32px;
+    width: 32px;
+}
+
+.window-output {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: -webkit-fill-available;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    border-radius: 0px 0px 15px 15px;
+    border: black solid 0.5px
+}
+
+.screen-text {
+    padding: 10px 80px 10px 20px;
+    width: 100%;
+    height: max-content
+}
+
+.user-input {
+    padding: 20px 40px 5px 20px;
+    width: 100%
+}
+
+.expandable_input {
+    min-width: 60%;
+    padding: 2px 5px 5px 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: 0
+    
+}
+
+.highscores {
+    display: flex;
+    max-width: 50%;
+    min-width: 40%
+    
+}
+
+.highscores table {
+    padding: 10px;
+    width: -webkit-fill-available
+}
+
+.highscores tr {
+    text-align: center;
+}
