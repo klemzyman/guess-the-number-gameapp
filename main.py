@@ -15,7 +15,7 @@ app.config['DEFAULT_LANGUAGE'] = 'en_EN'
 app.config['DEFAULT_RANGE_TO'] = 20
 app.config['DEFAULT_HARD_MODE'] = False
 
-db_url = os.getenv("DATABASE_URL", "sqlite:///db.sqlite").replace("postgres://", "postgresql://", 1)
+db_url = os.getenv("DATABASE_URL", "sqlite:///db.sqlite") #.replace("postgres://", "postgresql://", 1)
 db = SQLAlchemy(db_url)
 #db = SQLAlchemy(app)
 
