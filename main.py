@@ -240,7 +240,7 @@ def settings():
             
             for i in range(len(game_texts['languages'])):
                 letter = chr(i+97).upper()
-                screen_text.append(f"{letter}) {game_texts['languages'][i][0]}")
+                screen_text.append(letter + ') ' + game_texts['languages'][i][0])
             
             label = game_texts[session_data.language]['settings']['label']
             
