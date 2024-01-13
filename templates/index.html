@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Number guessing game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="window-top">
+                <div class="window-top-element">
+                    Terminal                
+                </div>
+                <div class="window-top-element">
+                    <div class="window-top-icons">
+                        <img src="/static/img/minimize.png" alt="m">
+                        <img src="/static/img/maximize.png" alt="M">
+                        <img src="/static/img/close.png" alt="X">
+                    </div>
+                </div>
+            </div>
+            <div class="window-output">
+                
+                
+                <div class="big-title">
+                    {% for line in big_title %}
+                        <div class="big-title-line">{{- line -}}</div>
+                    {% endfor %}
+                </div>
+            
+                
+                <div class="screen-text">
+                    {% if input_id == 'highscores' %}
+                        <div class="highscores">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    {% for header in screen_text[0] %}
+                                        <th>{{ header }}</th>
+                                    {% endfor %}
+                                </tr>
+                                {% for highscore in screen_text %}
+                                    {% if not loop.first %}
+                                        <tr>
+                                            <td>{{loop.index - 1}}</td>
+                                            {% for value in highscore %}
+                                                <td>
+                                                    {{ value }}
+                                                </td>
+                                            {% endfor %}
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </table>    
+                        </div>
+                    {% else %}    
+                
+                        {% for line in screen_text %}
+                            <br>{{ line }}
+                        {% endfor %}
+                
+                    {% endif %}
+                </div>
+                <div class="user-input">
+                    <form autocomplete="off" method='post' action="/input?id={{ input_id }}">
+                        <label for="user-input">{{ label }} </label>
+                        <input type="textarea" autofocus="autofocus" name="user-input" id="user-input" class="expandable_input">
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
