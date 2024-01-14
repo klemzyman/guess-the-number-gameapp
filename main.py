@@ -9,15 +9,13 @@ from random import randint
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL").replace("postgres://", "postgresql://", 1)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['DEFAULT_LANGUAGE'] = 'en_EN'
 app.config['DEFAULT_RANGE_TO'] = 20
 app.config['DEFAULT_HARD_MODE'] = False
 
-db_url = os.getenv("DATABASE_URL")
-print(db_url)
-db = SQLAlchemy(db_url)
+db = SQLAlchemy(app)
 
 class Sessions(db.Model):
     id = db.Column(db.Integer, primary_key=True)
