@@ -16,6 +16,7 @@ app.config['DEFAULT_RANGE_TO'] = 20
 app.config['DEFAULT_HARD_MODE'] = False
 
 db_url = os.getenv("DATABASE_URL")
+print(db_url)
 db = SQLAlchemy(db_url)
 
 class Sessions(db.Model):
