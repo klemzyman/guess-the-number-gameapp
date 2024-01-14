@@ -25,7 +25,7 @@
             "date": "Date",
             "guess": "Guessed in",
             "mode": "Game Mode",
-            "label": "Go back?".
+            "label": "Go back?",
             "no_highscores": "No Highscores, yet."
         },
         "game": {
@@ -61,7 +61,7 @@
             "date": "Datum",
             "guess": "Št. poskusov",
             "mode": "Težavnost",
-            "label": "Nazaj?"
+            "label": "Nazaj?",
             "no_highscores": "Ni še rezultatov."
         },
         "game": {
