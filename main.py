@@ -29,7 +29,7 @@ class Sessions(db.Model):
 class Games(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     game_hex = db.Column(db.String(64), unique=True, nullable = False)
-    session = db.Column(db.String, db.ForeignKey('sessions.id'), nullable = False)
+    session = db.Column(db.Integer, db.ForeignKey('sessions.id'), nullable = False)
     range_to = db.Column(db.Integer, nullable = False)
     hard_mode = db.Column(db.Boolean, nullable = False)
     secret_number = db.Column(db.Integer, nullable = False)
