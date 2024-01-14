@@ -25,7 +25,8 @@
             "date": "Date",
             "guess": "Guessed in",
             "mode": "Game Mode",
-            "label": "Go back?"
+            "label": "Go back?".
+            "no_highscores": "No Highscores, yet."
         },
         "game": {
             "label": "Guess the secret number between 1 and %1:",
@@ -61,6 +62,7 @@
             "guess": "Št. poskusov",
             "mode": "Težavnost",
             "label": "Nazaj?"
+            "no_highscores": "Ni še rezultatov."
         },
         "game": {
             "label": "Ugani skrito številko med 1 in %1:",
