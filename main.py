@@ -181,7 +181,7 @@ def highscores():
     highscores = Results.query.order_by(Results.guess.asc()).order_by(Results.hard_mode.desc()).order_by(Results.timestamp.asc()).limit(10).all()
     
     if highscores == []:
-        screen_text = ['No highscores yet.']
+        screen_text = [game_texts[session_data.language]['highscores']['no_highscores']]
         input_id = 'no-highscores'
     else:
         screen_text.append([game_texts[session_data.language]['highscores']['player'], 
